@@ -1,0 +1,13 @@
+version: '3'
+services:
+  django:
+    image: dockerhub.datagrand.com/zz57/logs_upload:2019112610
+    restart: always
+    ports:
+      - 18002:5001
+    volumes:
+      - ./data/logs:/apps/logs
+    environment:
+      - IDPS_HOST=127.0.0.1
+      - IDPS_PORT=15800
+

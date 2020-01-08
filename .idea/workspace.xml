@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd2b3628-a470-47c6-a5b6-4a31e38390a9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/utility/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/utility/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/requirs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/service/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/service/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utility/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/models/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/service/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/a1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/apps/static/a1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/static/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/config.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deploy" />
       <recent name="$PROJECT_DIR$/apps/core" />
       <recent name="$PROJECT_DIR$/apps/models" />
       <recent name="$PROJECT_DIR$/apps" />
       <recent name="$PROJECT_DIR$/utility" />
-      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -99,7 +88,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/manage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +115,7 @@
       <updated>1567853066978</updated>
       <workItem from="1578475498209" duration="409000" />
       <workItem from="1578475910293" duration="10000" />
-      <workItem from="1578475937202" duration="1410000" />
+      <workItem from="1578475937202" duration="3392000" />
     </task>
     <servers />
   </component>
