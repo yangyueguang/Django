@@ -1,5 +1,5 @@
 FROM python:3.7
-MAINTAINER xuechao <xuechao@datagrand.com>
+MAINTAINER xuechao <2829969299@qq.com>
 ENV TZ=Asia/Beijing
 ADD apps /apps
 ADD setup.py /setup.py

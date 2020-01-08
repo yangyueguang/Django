@@ -1,4 +1,4 @@
 from django.contrib import admin
-from myproject.models import *
+from apps.models.models import *
 admin.site.register(Student)
 # Register your models here.
