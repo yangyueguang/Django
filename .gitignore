@@ -6,6 +6,7 @@ app/static
 # C extensions
 *.so
 .idea
+.idea/*
 # Distribution / packaging
 .Python
 build/
