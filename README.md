@@ -1,7 +1,10 @@
 # 这是Django框架
 [接口文档](https://my.apipost.cn/doc?project_id=35275#195056)
+- Django框架要包含项目名称和应用名称，分两块。
+- Django项目名称为projects，应用名称为apps。在settings里面做相应设置。
+- 要设置python3.7以上的虚拟环境。
 
-功能说明
+##功能说明
 *************
 ### 部署流程
 1, 将项目clone到本地，  
@@ -59,3 +62,52 @@ Longest transaction:	       10.01
 Shortest transaction:	       10.00
 ```
 从上面的执行结果对比中可以看出，最长等待时间是10s，可见10个并发请求时，10个请求几乎是被同时处理的
+
+
+## 关于celery
+安装包
+celery==3.1.25
+celery-with-redis==3.0
+django-celery==3.1.17
+配置settings
+INSTALLED_APPS = (
+  ...
+  'djcelery',
+}
+...
+import djcelery
+djcelery.setup_loader()
+BROKER_URL = 'redis://127.0.0.1:6379/0'
+CELERY_IMPORTS = ('应用名称.task')
+在应用目录下创建task.py文件
+import time
+from celery import task
+
+@task
+def sayhello():
+    print('hello ...')
+    time.sleep(2)
+    print('world ...')
+迁移，生成celery需要的数据表
+python manage.py migrate
+启动Redis
+sudo redis-server /etc/redis/redis.conf
+启动worker
+python manage.py celery worker --loglevel=info
+调用语法
+function.delay(parameters)
+使用代码
+```
+#from task import *
+def sayhello(request):
+    print('hello ...')
+    import time
+    time.sleep(10)
+    print('world ...')
+
+    # sayhello.delay()
+
+    return HttpResponse("hello world")
+```
+
+
