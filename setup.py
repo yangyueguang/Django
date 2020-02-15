@@ -14,7 +14,7 @@ except:
 
 SRC_DIR = "apps"
 MODULE_NAME = "logs"
-IGNORE_FILES = ["__init__.py", "run.py", "main.py", "server.py"]
+IGNORE_FILES = ["__init__.py", "manager.py", "main.py", "server.py"]
 
 
 """ 扫描文件夹下所有的文件 """
