@@ -6,4 +6,5 @@ requests==2.22.0
 redis==3.3.11
 pyyaml==5.1.2
 Django
+numpy
 cython
