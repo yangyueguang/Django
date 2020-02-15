@@ -74,6 +74,17 @@ if __name__ == '__main__':
     packages = get_packages(SRC_DIR)
     setup(
         name=MODULE_NAME,
+        version=version,
+        author='Django Software Foundation',
+        author_email='foundation@djangoproject.com',
+        description=('A high-level Python Web framework th'),
+        license='BSD',
+        url='http://www.djangoproject.com/',
+        include_package_data=True,
+        scripts=['django/bin/django-admin.py'],
+        entry_points={'console_scripts': ['django-admin = django.core.management:execute_from_command_line']},
+        extras_require={"bcrypt": ["bcrypt"]},
+        zip_safe=False,
         packages=packages,
         ext_modules=extensions,
         cmdclass={'build_ext': build_ext}, requires=['numpy']

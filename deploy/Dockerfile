@@ -7,7 +7,7 @@ ADD setup.py /setup.py
 #install requires
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com --upgrade pip
-RUN pip install -r /apps/requirs.txt -i https://pypi.douban.com/simple/
+RUN pip install -r /apps/requires.txt -i https://pypi.douban.com/simple/
 
 WORKDIR /apps
 # 加密py
